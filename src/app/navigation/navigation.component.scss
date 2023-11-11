@@ -1,15 +1,16 @@
 @import "../app.component.scss";
 nav{
   background-color: black;
+  margin-top:2%;
 }
 #navbarNav{
-  margin-left: 8%;
+  margin-left: 15%;
 }
 .navbar-toggler{
   background-color: $purple;
 }
 li, #companyName{
-  padding-right: 5%;
+  padding-right: 8%;
   font-size: 20px;
 }
 #companyName{
