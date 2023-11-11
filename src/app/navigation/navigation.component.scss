@@ -1,0 +1,38 @@
+@import "../app.component.scss";
+nav{
+  background-color: black;
+}
+#navbarNav{
+  margin-left: 8%;
+}
+.navbar-toggler{
+  background-color: $purple;
+}
+li, #companyName{
+  padding-right: 5%;
+  font-size: 20px;
+}
+#companyName{
+  font: $special-font;
+}
+a{
+  color: white;
+}
+
+a:hover{
+  color: $purple;
+}
+
+.active{
+  color: $purple;
+}
+
+#contactBtn{
+  margin-left: 3%;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 17px;
+  color:white;
+  border:none;
+  background-color: $purple;
+}

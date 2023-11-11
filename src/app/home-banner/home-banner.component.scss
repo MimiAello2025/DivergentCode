@@ -1,0 +1,29 @@
+@import "../app.component.scss";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+#banner{
+  text-align: center;
+  margin-top:15%;
+}
+
+#banner h1 {
+  @include font-size(120px);
+}
+#banner h1 {
+  font-size: calc(30px + 3.3vw);
+}
+
+
+#banner #head{
+  margin-top: 3%;
+}
+
+
+#exploreBtn{
+  margin-top:2%;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 17px;
+  color:white;
+  border:none;
+  background-color: $purple;
+}
