@@ -1,24 +1,33 @@
 @import "../app.component.scss";
 
 .cardGroup{
-  margin-top:20%;
+  margin-top:15%;
 }
 
-.cardGroup h3{
+.cardGroup h2{
   text-align: center;
   text-decoration: solid underline white 5px;
+  margin-bottom: 2%;
 }
 
 .card{
-  margin-top:3%;
+  margin: 3% 2%;
   max-width: 30%;
   color:white;
   background-color: black;
   text-align: center;
 }
 
+.card-title{
+  font-weight: bold;
+}
 
-.exploreBtn{
+.card-text{
+  color:$grey;
+}
+
+
+.exploreBtn, #subscribe{
   margin-top:2%;
   padding: 10px 25px;
   border-radius: 20px;
@@ -26,4 +35,28 @@
   color:white;
   border:none;
   background-color: $purple;
+}
+
+#newsletter p{
+  text-align: center;
+  color: $grey;
+  font-size: 20px;
+}
+
+#email{
+  max-width: 30%;
+  height: 60px;
+  border-radius: 25px;
+  padding-left:4%;
+  margin-right: 3%;
+}
+
+#email::placeholder{
+  font-size: 20px;
+  color: $grey;
+}
+#subscribe{
+  padding: 15px 30px;
+  border-radius: 27px;
+  font-size: 20px;
 }
