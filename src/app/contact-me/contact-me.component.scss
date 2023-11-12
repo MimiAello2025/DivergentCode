@@ -1,0 +1,65 @@
+@import "../app.component.scss";
+
+#leftSide{
+  margin-left:5%;
+  text-align: left;
+}
+
+#leftSide, #rightSide{
+  margin-top: 6%;
+}
+
+p{
+  font-size: 17px;
+}
+
+#imgContainer{
+  position: relative;
+  margin-top: 5%;
+}
+
+label:after{
+  content: " *";
+  color: white;
+}
+
+form{
+  border: 6px solid $purple;
+  border-radius: 20px;
+  max-width:500px;
+  padding: 7% 6%;
+  width:80%;
+  margin-left: 10%;
+}
+
+input, textarea{
+  background-color: #B0BDD6;
+  border:none;
+  margin-top: 2%;
+}
+
+input:focus, textarea:focus{
+  background-color: #c3d0ee;
+}
+
+.row{
+  padding-top: 4%;
+}
+
+.col{
+  padding-bottom: 2%;
+}
+
+#message{
+  height: 150px;
+}
+
+.contactBtn{
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 17px;
+  color:white;
+  border:none;
+  background-color: $purple;
+  margin-top: 3%;
+}

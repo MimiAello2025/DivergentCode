@@ -1,72 +1,42 @@
 <app-home-banner></app-home-banner>
-<div id="latestTutorials" class="cardGroup">
-  <h2>Latest Tutorials</h2>
-  <div class="d-flex flex-row mb-3 justify-content-center">
-  <div class="card">
-    <img src="assets/angular.png" class="card-img-top" alt="Image of Angular Code">
-    <div class="card-body">
-      <h5 class="card-title">Angular</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <button class="btn btn-primary exploreBtn" role="button" >Explore</button>
-    </div>
-  </div>
-  <div class="card">
-    <img src="assets/react.png" class="card-img-top" alt="Image of react code">
-    <div class="card-body">
-      <h5 class="card-title">React</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <button class="btn btn-primary exploreBtn" role="button" >Explore</button>
-    </div>
-  </div>
-  <div class="card" >
-    <img src="assets/seo.png" class="card-img-top" alt="Image reading 'SEO'">
-    <div class="card-body">
-      <h5 class="card-title">SEO</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <button class="btn btn-primary exploreBtn" role="button">Explore</button>
-    </div>
-  </div>
-</div>
-</div>
-<div id="featProjects" class="cardGroup">
-  <h2>Featured Projects</h2>
-  <div class="d-flex flex-row mb-3 justify-content-center">
-    <div class="card">
-      <img src="assets/baldBaker.png" class="card-img-top" alt="Image of Angular Code">
-      <div class="card-body">
-        <h5 class="card-title">Little Bald Baker</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <button class="btn btn-primary exploreBtn" role="button" >Explore</button>
-      </div>
-    </div>
-    <div class="card">
-      <img src="assets/tetris.png" class="card-img-top" alt="Image of react code">
-      <div class="card-body">
-        <h5 class="card-title">Tetris Game</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <button class="btn btn-primary exploreBtn" role="button" >Explore</button>
-      </div>
-    </div>
-    <div class="card" >
-      <img src="assets/govid.png" class="card-img-top" alt="Image reading 'SEO'">
-      <div class="card-body">
-        <h5 class="card-title">GO-VID U App</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <button class="btn btn-primary exploreBtn" role="button">Explore</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div id="newsletter" class="cardGroup">
-  <h2>Newsletter</h2>
-<div class="d-flex justify-content-center overflow-auto">
-  <p class="w-50 p-3">Get updates on my Software Engineering journey, including tutorials on new tech I’m learning and my opinions on current stacks!</p>
-</div>
+  <div id="latestTutorials" class="cardGroup">
+    <h2>Latest Tutorials</h2>
+    <div class="d-flex flex-row mb-3 justify-content-center">
+      <div class="card" *ngFor="let tutorial of tutorials">
+        <img src="{{tutorial.imageURL}}" class="card-img-top" alt="Image of Angular Code">
+        <div class="card-body">
+          <h5 class="card-title">{{tutorial.title}}</h5>
+          <p class="card-text">{{tutorial.description}}</p>
+          <button [routerLink]="tutorial.pageLink" class="btn btn-primary exploreBtn" role="button" >Explore</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="featProjects" class="cardGroup">
+    <h2>Featured Projects</h2>
+    <div class="d-flex flex-row mb-3 justify-content-center">
+      <div class="card" *ngFor="let project of projects">
+        <img src="{{project.imageURL}}" class="card-img-top" alt="Image of Angular Code">
+        <div class="card-body">
+          <h5 class="card-title">{{project.title}}</h5>
+          <p class="card-text">{{project.description}}</p>
+          <button class="btn btn-primary exploreBtn" role="button" [routerLink]="project.pageLink">Explore</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="newsletter" class="cardGroup">
+    <h2>Newsletter</h2>
+    <div class="d-flex justify-content-center overflow-auto">
+      <p class="w-50 p-3">Get updates on my Software Engineering journey, including tutorials on new tech I’m learning and my opinions on current stacks!</p>
+    </div>
     <form>
       <div class="d-flex flex-row align-items-end justify-content-center ">
         <input class="form-control" id="email" type="text" placeholder="Email" aria-label="Email">
         <button class="btn btn-primary" id="subscribe" type="submit">Subscribe</button>
       </div>
     </form>
-</div>
+  </div>

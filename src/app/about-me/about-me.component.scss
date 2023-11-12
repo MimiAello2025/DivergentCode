@@ -1,0 +1,22 @@
+@import "../app.component.scss";
+
+hr{
+  opacity: 1;
+  border: 6px solid $purple;
+  border-radius: 5px;
+  width:75%;
+  text-align:left;
+}
+
+p{
+  font-size: 17px;
+  width: 75%;
+  padding-top: 3%;
+  font-weight: bold;
+}
+
+.row{
+  margin-top:10%;
+  width:80%;
+  margin-left:10%;
+}
